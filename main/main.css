@@ -2,9 +2,9 @@
     width: 0px;
 }
 .canvas{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: linear-gradient(-35deg, #FFAAF8, #FFF6AE);
+    background: linear-gradient(270deg, #FFAAF8, #FFF6AE);
     margin: 0px;
 }
 .navbar{
@@ -54,8 +54,14 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.7;
+    font-size: 15px;
     background-color: #FF7171;
     color: white;
+    padding: 12px 80px;
+    border: none;
+}
+.button1:hover{
+    cursor: pointer;
 }
 .body2{
     font-family: 'Montserrat', sans-serif;
@@ -81,26 +87,6 @@
 .img1:hover{
     cursor:pointer;
 }
-.img2{
-    height: 200px;
-    width: 200px;
-}
-.img3{
-    height: 200px;
-    width: 200px;
-}
-.img4{
-    height: 200px;
-    width: 200px;
-}
-.img5{
-    height: 200px;
-    width: 200px;
-}
-.img6{
-    height: 30px;
-    width: 30px;
-}
 .container1{
     display: flex;
     flex-direction: row;
@@ -122,6 +108,101 @@
 .box{
     background-color: #FF7171;
 }
+@media (min-width: 1441px) {
+    .navbar{
+        font-size: 22px;
+        display: flex;
+        flex-direction: row;
+        letter-spacing: 0.2em;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 280px;
+        padding-right: 280px;
+    }
+    .img1{
+        height: 40px;
+        width: 50px;
+    }
+    .img2{
+        height: 91.6vh;
+        width: 50vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container1_1{
+        margin-left: 90px;
+        margin-right: 70px;
+    }
+    .heading1{
+        font-size: 58px;
+        margin-bottom: 85px;
+    }
+    .body1{
+        font-size: 21px;
+        margin-bottom: 85px;
+    }
+    .container2{
+    margin: 160px 0px;
+    }
+    .img3{
+        height: 15vw;
+        width: 18vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img4{
+        height: 15vw;
+        width: 18vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img5{
+        height: 30.7vw;
+        width: 18vw;
+    }
+    .container2_1{
+        gap: 40px;
+    }
+    .imagecontainer2_1{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    .box{
+        padding: 25px 30px 15px 30px;
+    }
+    .heading2{
+        font-size: 20px;
+    }
+    .body2{
+        font-size: 54px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .img6{
+        height: 30px;
+        width: 30px;
+    }
+    .button2{
+        font-size: 20px;
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .arrow{
+        padding-top: 14px;
+    }
+}
 @media (max-width: 1440px) {
     .navbar{
         font-size: 17px;
@@ -129,10 +210,85 @@
         flex-direction: row;
         letter-spacing: 0.12em;
         justify-content: space-between;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding: 7px 140px; 
+    }
+    .img2{
+        height: 93.7vh;
+        width: 50vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container1_1{
+        margin-left: 70px;
+        margin-right: 60px;
+    }
+    .heading1{
+        font-size: 48px;
+        margin-bottom: 65px;
+    }
+    .body1{
+        font-size: 17px;
+        margin-bottom: 65px;
+    }
+    .container2{
+    margin: 160px 0px;
+    }
+    .img3{
+        height: 15vw;
+        width: 18vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img4{
+        height: 15vw;
+        width: 18vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img5{
+        height: 31.4vw;
+        width: 18vw;
+    }
+    .container2_1{
+        gap: 30px;
+    }
+    .imagecontainer2_1{
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .box{
+        padding: 25px 30px 15px 30px;
+    }
+    .heading2{
+        font-size: 16px;
+    }
+    .body2{
+        font-size: 3.5vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .img6{
+        height: 20px;
+        width: 20px;
+    }
+    .button2{
+        font-size: 15px;
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .arrow{
+        padding-top: 7px;
     }
 }
 @media (max-width: 1024px) {
@@ -142,23 +298,120 @@
         flex-direction: row;
         letter-spacing: 0.12em;
         justify-content: space-between;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding: 5px 130px;
+    }
+    .img2{
+        height: 66vh;
+        width: 50vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container1_1{
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+    .heading1{
+        font-size: 40px;
+        margin-bottom: 65px;
+    }
+    .body1{
+        font-size: 13px;
+        margin-bottom: 65px;
+    }
+    .button1{
+        font-size: 13px;
+        padding: 10px 60px;
+    }
+    .img3{
+        height: 19vw;
+        width: 22vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img4{
+        height: 19vw;
+        width: 22vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img5{
+        height: 40vw;
+        width: 22vw;
+    }
+    .body2{
+        font-size: 3.3vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 768px) { 
     .navbar{
-        font-size: 13px;
+        font-size: 11px;
         display: flex;
         flex-direction: row;
         letter-spacing: 0.12em;
         justify-content: space-between;
+        padding: 5px 45px;
+    }
+    .img2{
+        height: 51vh;
+        width: 50vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container1_1{
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+    .heading1{
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+    .body1{
+        font-size: 10px;
+        margin-bottom: 50px;
+    }
+    .button1{
+        font-size: 11px;
+        padding: 10px 60px;
+    }
+    .heading2{
+        font-size: 10px;
+    }
+    .img3{
+        height: 18vw;
+        width: 22vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img4{
+        height: 18vw;
+        width: 22vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img5{
+        height: 38.3vw;
+        width: 22vw;
+    }
+    .body2{
+        font-size: 3vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .heading2{
+        font-size: 1.7vw;
+    }
+    .button2{
+        font-size: 1.7vw;
+        gap: 10px;
+    }
+    .img6{
+        height: 13px;
+        width: 13px;
+    }
+    .arrow{
         padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 50px;
-        padding-right: 50px;
     }
 }
 @media (max-width: 480px) {
@@ -168,13 +421,83 @@
         flex-direction: row;
         letter-spacing: 0.06em;
         justify-content: space-between;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 5px 15px;
     }
     .img1{
         height: 20px;
-        width: 30px;
+        width: 20px;
+    }
+    .img2{
+        height: 40vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 20px;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1_1{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .heading1{
+        font-size: 26px;
+        margin: 40px 0px;
+    }
+    .body1{
+        font-size: 9px;
+        margin-bottom: 40px;
+    }
+    .button1{
+        font-size: 11px;
+        padding: 10px 60px;
+    }
+    .heading2{
+        font-size: 10px;
+    }
+    .img3{
+        height: 32vw;
+        width: 38vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img4{
+        height: 32vw;
+        width: 38vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img5{
+        height: 67.8vw;
+        width: 38vw;
+    }
+    .body2{
+        font-size: 6vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .heading2{
+        font-size: 2.4vw;
+    }
+    .button2{
+        font-size: 2.8vw;
+        gap: 10px;
+    }
+    .img6{
+        height: 15px;
+        width: 15px;
+    }
+    .arrow{
+        padding-top: 5px;
+    }
+    .container2{
+        margin: 70px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
