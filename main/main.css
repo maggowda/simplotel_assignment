@@ -1,12 +1,15 @@
+/* Hide scrollbar for webkit browsers */
 ::-webkit-scrollbar {
     width: 0px;
 }
+/* Main page background with gradient */
 .canvas{
     height: 100%;
     width: 100%;
     background: linear-gradient(270deg, #FFAAF8, #FFF6AE);
     margin: 0px;
 }
+/* Navigation bar styling */
 .navbar{
     background-color: #FF7171;
     font-family: 'Libre Baskerville', serif;
@@ -16,6 +19,7 @@
     justify-content: space-around;
     align-items: center;
 }
+/* Navigation menu items styling */
 .item1{
     color: black;
     text-decoration: none;
@@ -40,16 +44,20 @@
     color: black;
     text-decoration: none;
 }
+/* Typography styles */
+/* Main heading typography */
 .heading1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     letter-spacing: 0.15em;
 }
+/* Main body text typography */
 .body1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.7;
 }
+/* Primary button styling */
 .button1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -60,9 +68,11 @@
     padding: 12px 80px;
     border: none;
 }
+/* Button hover effect */
 .button1:hover{
     cursor: pointer;
 }
+/* Secondary section typography */
 .body2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -73,6 +83,7 @@
     font-weight: 400;
     line-height: 1.7;
 }
+/* Secondary button with flex layout */
 .button2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -80,6 +91,8 @@
     display: flex;
     flex-direction: row;
 }
+/* Image styling */
+/* Small navigation icon */
 .img1{
     height: 30px;
     width: 40px;
@@ -87,27 +100,35 @@
 .img1:hover{
     cursor:pointer;
 }
+/* Layout containers */
+/* Main content container with flexbox */
 .container1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+/* Second section container */
 .container2{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+/* Sub-container for second section */
 .container2_1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+/* Content box styling */
 .box{
     background-color: #FF7171;
 }
+/* ===== RESPONSIVE DESIGN - MEDIA QUERIES ===== */
+
+/* Large screens (1441px and above) */
 @media (min-width: 1441px) {
     .navbar{
         font-size: 22px;
@@ -203,6 +224,7 @@
         padding-top: 14px;
     }
 }
+/* Laptop screens (up to 1440px) */
 @media (max-width: 1440px) {
     .navbar{
         font-size: 17px;
@@ -291,6 +313,7 @@
         padding-top: 7px;
     }
 }
+/* Tablet screens (up to 1024px) */
 @media (max-width: 1024px) {
     .navbar{
         font-size: 17px;
@@ -344,6 +367,7 @@
         margin-bottom: 30px;
     }
 }
+/* Small tablets and large phones (up to 768px) */
 @media (max-width: 768px) { 
     .navbar{
         font-size: 11px;
@@ -414,6 +438,7 @@
         padding-top: 5px;
     }
 }
+/* Mobile screens (up to 480px) */
 @media (max-width: 480px) {
     .navbar{
         font-size: 9px;
